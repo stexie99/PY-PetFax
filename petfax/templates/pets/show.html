@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pets</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{pets.pet_name}}</h1>
+        <h2>{{pets.pet_fact}}</h2>
+        <img src="{{pets.pet_photo}}"/><br>
+        <a href="/pets"> Go Back </a>
+    </div>
+</body>
+</html>

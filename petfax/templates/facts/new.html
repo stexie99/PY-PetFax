@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Fact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Fax</h1>
+        <div>
+            If you have some fun animal fact you'd lke to share, please submit them!
+        </div>
+        <div>
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="fact">Fact</label><br>
+                <input type="text" id="fact" name="fact"><br>
+                <button>submit the fact</button>
+            </form>
+        </div>
+        <a href="/pets"> Go Back </a>
+    </div>
+</body>
+</html>
